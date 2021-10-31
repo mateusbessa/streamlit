@@ -6,8 +6,6 @@ from streamlit.type_util import Key
 import SessionState as ss
 
 model = jb.load('model_portabilidade.pkl')
-session = ss.get(run_id=0)
-
 st.title('Análise de provável evasão de clientes')
 
 with st.form(key="data_client"):
