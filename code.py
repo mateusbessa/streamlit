@@ -5,7 +5,7 @@ import numpy as np
 
 model = jb.load('model_portabilidade.pkl')
 
-st.title('Análise de provável AAAAA evasão de clientes')
+st.title('Análise de provável evasão de clientes')
 
 with st.form(key="data_client"):
     name = st.text_input(label='Nome do Cliente')
