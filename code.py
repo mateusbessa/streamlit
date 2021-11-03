@@ -6,6 +6,12 @@ from streamlit.type_util import Key
 from PIL import Image
 #import SessionState as ss
 
+
+st.set_page_config(
+        page_title="Análise de Churn",
+        page_icon="chart_with_upwards_trend",
+        layout="wide",
+    )
 model = jb.load('model_portabilidade.pkl')
 image = Image.open('alert.png')
 
@@ -34,3 +40,5 @@ if input_buttom:
     elif classify == 0:
         st.write('### Não é provável que o cliente abandone')
     st.write(f"### Probabilidade do cliente abandonar é de {str([result[:,1]*100])[8:12]}%")
+
+    "warning":"⚠️"
