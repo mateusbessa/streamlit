@@ -41,4 +41,4 @@ if input_buttom:
         st.write('### Não é provável que o cliente abandone')
     st.write(f"### Probabilidade do cliente abandonar é de {str([result[:,1]*100])[8:12]}%")
 
-    "warning":"⚠️"
+    #"warning":"⚠️"
