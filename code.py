@@ -7,7 +7,7 @@ from PIL import Image
 #import SessionState as ss
 
 model = jb.load('model_portabilidade.pkl')
-image = Image.open('alert.jpg')
+image = Image.open('alert.png')
 
 #st.beta_set_page_config(page_title='Predição de Churn')
 
