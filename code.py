@@ -3,9 +3,11 @@ import pandas as pd
 import joblib as jb
 import numpy as np
 from streamlit.type_util import Key
-import SessionState as ss
+from PIL import Image
+#import SessionState as ss
 
 model = jb.load('model_portabilidade.pkl')
+image = Image.open('alert.jpg')
 
 #st.beta_set_page_config(page_title='Predição de Churn')
 
@@ -29,5 +31,5 @@ if input_buttom:
     if classify == 1:
         st.write('### É provável que o cliente nos abandone')
     elif classify == 0:
-        st.write('### Não é provável que o cliente abandone')
+        st.write(f'### Não é provável que o cliente abandone',st.image(image))
     st.write(f"### Probabilidade do cliente abandonar é de {str([result[:,1]*100])[8:12]}%")
