@@ -7,7 +7,7 @@ import SessionState as ss
 
 model = jb.load('model_portabilidade.pkl')
 
-st.beta_set_page_config(page_title='Predição de Churn')
+#st.beta_set_page_config(page_title='Predição de Churn')
 
 st.title('Análise de provável evasão de clientes')
 
