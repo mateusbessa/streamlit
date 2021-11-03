@@ -31,5 +31,6 @@ if input_buttom:
     if classify == 1:
         st.write('### É provável que o cliente nos abandone')
     elif classify == 0:
-        st.write(f'### Não é provável que o cliente abandone',st.image(image))
+        st.write(f'### Não é provável que o cliente abandone')
+        st.image(image, caption='teste')
     st.write(f"### Probabilidade do cliente abandonar é de {str([result[:,1]*100])[8:12]}%")
