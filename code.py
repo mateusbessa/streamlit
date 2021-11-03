@@ -9,7 +9,7 @@ model = jb.load('model_portabilidade.pkl')
 st.title('Análise de provável evasão de clientes')
 
 with st.form(key="data_client"):
-    name = st.text_input(label='Nome do Cliente')
+    name = st.text_input(label='Nome do Cliente AAA')
     credit_score = st.number_input(label='Score',min_value=0,max_value=2000)
     tenure = st.number_input(label='Tempo de relacionamento com o banco',min_value=0,max_value=100)
     balance = st.number_input(label='Saldo em conta')
