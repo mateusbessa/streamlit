@@ -7,11 +7,11 @@ from PIL import Image
 #import SessionState as ss
 
 
-#st.set_page_config(
-#    page_title="Análise de Churn",
-#    page_icon="chart_with_upwards_trend",
+st.set_page_config(
+    page_title="Análise de Churn",
+    page_icon="chart_with_upwards_trend",
     #layout="wide",
-#)
+)
 
 model = jb.load('model_portabilidade.pkl')
 image = Image.open('alert.png')
