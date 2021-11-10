@@ -13,7 +13,7 @@ st.set_page_config(
     #layout="wide",
 )
 
-model = jb.load('model_portabilidade_v2.pkl')
+model = jb.load('model_portabilidade.pkl')
 image = Image.open('alert.png')
 
 st.title('Análise de provável evasão de clientes')
